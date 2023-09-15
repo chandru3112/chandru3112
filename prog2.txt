@@ -1,0 +1,30 @@
+echo "Directories and File Management"
+echo "Enter new directory name"
+read newdir
+mkdir $newdir
+echo "The Current Working Directory"
+pwd
+echo "Enter the new filename"
+read newfile
+cat >$newfile
+echo "Create an empty file"
+echo "Enter the filename"
+read cpfile
+touch $cpfile
+echo "copy the contents from $newfile to $cpfile"
+cp $newfile $cpfile
+echo "List all the file and directories"
+ls
+
+echo "Delete a file"
+echo "Enter the Filename to Delete"
+read fn
+rm -i $fn
+echo "List the files after the deleting the command"
+ls
+echo "Remove the Directory"
+echo "Enter the directory name to remove"
+read rdir
+rmdir $rdir
+echo "List all the directories"
+ls -d */
